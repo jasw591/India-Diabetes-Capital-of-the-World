@@ -38,4 +38,4 @@ df.to_csv('diabetes_with_clusters.csv', index=False)
 joblib.dump(scaler, 'my_scaler.pkl')
 joblib.dump(kmeans, 'my_kmeans.pkl')
 
-print("Saved 'diabetes_with_clusters.csv' and model binaries successfully!")
+print("Saved 'diabetes_with_clusters.csv' and model binaries successfully")
