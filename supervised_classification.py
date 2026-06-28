@@ -31,12 +31,10 @@ cat_model.fit(X_train, y_train, cat_features=[cluster_col_idx])
 y_pred = cat_model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred) * 100
 
-print("\n==========================================")
-print(f"🎯 FINAL SUPERVISED MODEL ACCURACY: {accuracy:.2f}%")
-print("==========================================\n")
-print("📝 Detailed Performance Report:")
+print(f" FINAL SUPERVISED MODEL ACCURACY: {accuracy:.2f}%")
+print(" Detailed Performance Report:")
 print(classification_report(y_test, y_pred, target_names=['Healthy', 'Diabetic']))
 
 # 6. Save final classification weights
 cat_model.save_model('my_catboost.cbm')
-print("CatBoost classification weights exported successfully!")
+print("CatBoost classification weights exported successfully")
