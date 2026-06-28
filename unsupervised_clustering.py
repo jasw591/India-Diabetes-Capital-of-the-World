@@ -27,11 +27,10 @@ df['Cluster'] = kmeans.fit_predict(X_scaled)
 sil_score = silhouette_score(X_scaled, df['Cluster'])
 db_index = davies_bouldin_score(X_scaled, df['Cluster'])
 
-print("\n==========================================")
+
 print("     UNSUPERVISED MODEL METRICS RESULT     ")
-print("==========================================")
-print(f"✨ Silhouette Score: {sil_score:.4f}")
-print(f"📊 Davies-Bouldin Index: {db_index:.4f}")
+print(f" Silhouette Score: {sil_score:.4f}")
+print(f" Davies-Bouldin Index: {db_index:.4f}")
 print("==========================================\n")
 
 # 6. Save the cluster labels into a new dataset file and save modeling objects
