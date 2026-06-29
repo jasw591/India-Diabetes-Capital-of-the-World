@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from catboost import CatBoostClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-print("--- Starting Supervised Classification Pipeline ---")
+print("Starting Supervised Classification Pipeline")
 
 # 1. Load data containing our unsupervised engineered feature
 df = pd.read_csv('diabetes_with_clusters.csv')
