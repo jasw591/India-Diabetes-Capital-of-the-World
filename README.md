@@ -1,4 +1,4 @@
-# Unsupervised Risk Stratification Pipeline: Coronary Heart Disease
+# Unsupervised Risk Stratification: Coronary Heart Disease
 An end-to-end data science and unsupervised machine learning pipeline designed to segment patient physiological risk profiles using the 4,240-patient Framingham Heart Study dataset. Without relying on historical target labels during training, this model successfully identifies high-risk clinical cohorts to optimize patient triaging.
 
 # Project Overview & Deliverables
