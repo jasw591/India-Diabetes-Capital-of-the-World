@@ -5,8 +5,8 @@ import numpy as np
 # Set up the look of the web page
 st.set_page_config(page_title="Diabetes Risk App", layout="centered")
 
-st.title("🩺 Deployed Diabetes Prediction App")
-st.write("Input patient data below to run the live K-Means + CatBoost hybrid pipeline.")
+st.title(" Deployed Diabetes Prediction App")
+st.write("Input patient data below to run the live K-Means and CatBoost hybrid pipeline.")
 
 st.markdown("---")
 
@@ -53,8 +53,8 @@ if st.button("Predict Diabetes Risk", type="primary"):
     # 3. Show the final results
     st.markdown("---")
     st.subheader("Results:")
-    st.write(f"🧬 **Automated Patient Group:** Cluster {assigned_cluster}")
-    st.write(f"📊 **Calculated Statistical Risk:** {int(prob * 100)}%")
+    st.write(f" **Automated Patient Group:** Cluster {assigned_cluster}")
+    st.write(f"**Calculated Statistical Risk:** {int(prob * 100)}%")
     
     if prediction == 1:
         st.error("⚠️ **Result:** High Risk (The model predicts the patient is positive for diabetes).")
