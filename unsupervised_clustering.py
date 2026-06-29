@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 import joblib
 
-print("--- Starting Unsupervised Clustering Pipeline ---")
+print("Starting Unsupervised Clustering Pipeline")
 
 # 1. Load Data
 df = pd.read_csv('diabetes.csv')
@@ -28,7 +28,7 @@ sil_score = silhouette_score(X_scaled, df['Cluster'])
 db_index = davies_bouldin_score(X_scaled, df['Cluster'])
 
 
-print("     UNSUPERVISED MODEL METRICS RESULT     ")
+print("UNSUPERVISED MODEL METRICS RESULT")
 print(f" Silhouette Score: {sil_score:.4f}")
 print(f" Davies-Bouldin Index: {db_index:.4f}")
 print("==========================================\n")
